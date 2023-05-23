@@ -13,6 +13,7 @@ PKG_TEST_HEADER="<git2.h>"
 PKG_TEST_FILE="tools/version.c"
 PKG_LIBS="-lgit2"
 PKG_CFLAGS=""
+USE_SYSTEM_LIBGIT2=1
 
 # Test for production platforms
 if test -f "/etc/os-release" && grep -Fq Ubuntu "/etc/os-release"; then
